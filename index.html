@@ -12,6 +12,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="shortcut icon" href="assets/logo.png" />
 
 		<!-- Tailwind (CDN) -->
 		<script src="https://cdn.tailwindcss.com"></script>
@@ -45,7 +46,7 @@
 				<img src="./assets/logo.png" alt="Tu marca" class="h-20 w-auto" />
 
 				<nav
-					class="hidden items-center gap-7 text-[12px] text-white/60 md:flex"
+					class="hidden items-center gap-7 text-[20px] text-white/60 md:flex"
 				>
 					<a class="hover:text-white" href="#">Home</a>
 					<a class="hover:text-white" href="#">About</a>
@@ -391,6 +392,107 @@
 						</div>
 					</div>
 				</article>
+			</section>
+
+			<!-- CONTACTO -->
+			<section class="mt-10">
+				<div class="contact-card">
+					<div class="grid gap-8 md:grid-cols-[0.95fr_1.05fr]">
+						<div>
+							<span class="text-[11px] uppercase tracking-[0.3em] text-white/45"
+								>Contacto</span
+							>
+							<h2
+								class="mt-3 font-display text-[28px] leading-tight text-white"
+							>
+								Hablemos de tu próxima<br />experiencia con Detersol
+							</h2>
+							<p class="mt-4 text-[12px] leading-6 text-white/60">
+								Cuéntanos sobre tu negocio, evento o receta favorita. Nuestro
+								equipo te responderá con opciones a la medida y recomendaciones
+								para potenciar el sabor.
+							</p>
+
+							<div class="mt-6 space-y-3 text-[12px] text-white/70">
+								<div class="flex items-center gap-3">
+									<span class="contact-badge">Horario</span>
+									<span>Lunes a viernes · 9:00 - 18:00</span>
+								</div>
+								<div class="flex items-center gap-3">
+									<span class="contact-badge">Teléfono</span>
+									<span>+52 444 123 4567</span>
+								</div>
+								<div class="flex items-center gap-3">
+									<span class="contact-badge">Correo</span>
+									<span>hola@detersol.mx</span>
+								</div>
+							</div>
+						</div>
+
+						<form class="contact-form">
+							<div class="grid gap-4 sm:grid-cols-2">
+								<label class="form-field">
+									<span>Nombre completo</span>
+									<input
+										type="text"
+										name="name"
+										placeholder="Tu nombre"
+										class="form-input"
+									/>
+								</label>
+
+								<label class="form-field">
+									<span>Correo</span>
+									<input
+										type="email"
+										name="email"
+										placeholder="tu@correo.com"
+										class="form-input"
+									/>
+								</label>
+
+								<label class="form-field">
+									<span>Teléfono</span>
+									<input
+										type="tel"
+										name="phone"
+										placeholder="+52 000 000 0000"
+										class="form-input"
+									/>
+								</label>
+
+								<label class="form-field">
+									<span>Motivo</span>
+									<select name="subject" class="form-input">
+										<option>Distribución</option>
+										<option>Eventos</option>
+										<option>Restaurante</option>
+										<option>Otro</option>
+									</select>
+								</label>
+							</div>
+
+							<label class="form-field mt-4">
+								<span>Mensaje</span>
+								<textarea
+									name="message"
+									rows="4"
+									placeholder="Cuéntanos lo que necesitas..."
+									class="form-input"
+								></textarea>
+							</label>
+
+							<div class="mt-5 flex flex-wrap items-center gap-3">
+								<button class="btn btn-primary" type="submit">
+									Enviar solicitud
+								</button>
+								<button class="btn btn-ghost" type="button">
+									Agendar llamada
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</section>
 
 			<!-- MAPA -->
