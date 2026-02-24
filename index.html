@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
@@ -117,13 +117,13 @@
 
 					<div class="mt-7 flex flex-wrap items-center gap-3">
 						<button class="btn btn-primary">Salsa En Botella</button>
-						<button class="btn btn-ghost">Ingresa a la tienda</button>
+						<!-- <button class="btn btn-ghost">Ingresa a la tienda</button> -->
 					</div>
 				</div>
 
 				<div class="relative">
 					<img
-						src="./assets/chili.png"
+						src="./assets/portada_frutas.png"
 						alt="Salsa"
 						class="mx-auto w-[320px] select-none drop-shadow-[0_50px_70px_rgba(0,0,0,0.55)] sm:w-[360px]"
 						draggable="false"
@@ -184,22 +184,34 @@
 						</div>
 					</article>
 
-					<article class="featured-card">
-						<div class="flex items-center gap-6">
+					<article class="featured-card featured-card--poki" id="pokiCarousel">
+						<div class="featured-card__carousel">
+							<!-- <button
+								type="button"
+								class="carousel-btn carousel-btn--prev"
+								aria-label="Sabor anterior"
+							>
+								&#10094;
+							</button> -->
 							<img
 								src="./assets/poky fresa manga 250.png"
 								alt="Salsa Fuego"
 								class="featured-card__product"
 								draggable="false"
+								id="pokiImage"
 							/>
 
 							<div class="min-w-0">
 								<div
+									id="pokiTitle"
 									class="font-display text-[20px] leading-tight text-white/95"
 								>
-									Salsa Fuego
+									Poki
 								</div>
-								<p class="mt-2 text-[12px] leading-5 text-white/70">
+								<p
+									class="mt-2 text-[12px] leading-5 text-white/70"
+									id="pokiDescription"
+								>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 								</p>
@@ -230,7 +242,19 @@
 										/>
 									</svg>
 								</a>
+								<div
+									class="carousel-dots"
+									id="pokiDots"
+									aria-hidden="true"
+								></div>
 							</div>
+							<!-- <button
+								type="button"
+								class="carousel-btn carousel-btn--next"
+								aria-label="Siguiente sabor"
+							>
+								&#10095;
+							</button> -->
 						</div>
 					</article>
 
